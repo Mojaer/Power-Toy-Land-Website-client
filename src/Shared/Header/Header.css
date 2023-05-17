@@ -1,0 +1,8 @@
+.toggler {
+    transition-property: position;
+    /* Specify the property to animate */
+    transition-duration: 1s;
+    /* Set the duration of the transition */
+    transition-timing-function: ease-in;
+    /* Set the easing effect */
+}
