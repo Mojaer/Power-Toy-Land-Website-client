@@ -22,16 +22,17 @@ const Banner = () => {
     return (
 
 
-        <div className='mx-auto'>
+        <div className='mx-auto mt-5'>
             <Swiper
-                watchSlidesProgress={true} slidesPerView={screenWidth > 992 ? 3.7 : screenWidth > 760 ? 2.7 : screenWidth > 576 ? 1.7 : 1.2}
+                watchSlidesProgress={true} slidesPerView={screenWidth > 992 ? 3.7 : screenWidth > 760 ? 2.7 : screenWidth > 576 ? 1.8 : 1.2}
                 direction={"horizontal"} modules={[Mousewheel]}
                 mousewheel={true}
                 className="mySwiper">
                 <SwiperSlide className='Slide-6 text-center '>
-                    <div>
-                        <h2>Grab Your Heros</h2>
-                        <h3>Power Up Your Playtime with Superhero Toys Galore</h3>
+                    <div className='space-y-1 p-4'>
+                        <h2 className='font-bold text-4xl'>Grab Your Heros</h2>
+                        <h3 className='my-3'>Power Up Your Playtime with Superhero Toys From the </h3>
+                        <img className='w-2/3 mx-auto' src="/public/power_toy_land-2.png" alt="" />
                     </div>
 
                 </SwiperSlide>
