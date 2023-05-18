@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "name": "Iron Man",
+        "instrument": "Arc Reactor Suit",
+        "image_url": "https://i0.wp.com/suparrobo.com/wp-content/uploads/2013/10/iron-man.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Thor",
+        "instrument": "Mjolnir",
+        "image_url": "https://media.istockphoto.com/id/1439183312/photo/close-up-shot-of-the-hammer-of-thor-stuck-in-the-ground.jpg?s=612x612&w=0&k=20&c=3x4Ac9R2plr5BAY_rmTidYiniTVdZFpnFG0AZmJIY9E="
+    },
+    {
+        "id": 3,
+        "name": "Aquaman",
+        "instrument": "Trident",
+        "image_url": "https://ae01.alicdn.com/kf/HTB1S49SSIfpK1RjSZFOq6y6nFXaI.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Batman",
+        "instrument": "Mask",
+        "image_url": "https://files.cults3d.com/uploaders/13532456/photo-file/fc323160-447e-4a57-812f-16c26ac1f6cf/245304474_10226905542363645_357077659059481794_n.jpg"
+    },
+    
+    {
+        "id": 5,
+        "name": "Captain America",
+        "instrument": "Vibranium Shield",
+        "image_url": "https://marvelofficial.com/wp-content/uploads/2020/04/F6D0C28C-E55A-45BA-A10F-4798E48D7AAF.jpeg"
+    },
+    {
+        "id": 6,
+        "name": "Groot",
+        "instrument": "Groot Miniature",
+        "image_url": "https://ae01.alicdn.com/kf/Ha353840f3d8e4c34b4bc60bcd239fdcbd/1PC-6cm-Disney-Toy-Mini-Groot-Marvel-Figure-Guardians-of-the-Galaxy-Miniature-Flower-Ornaments-Toy.jpg_Q90.jpg_.webp"
+    },
+    {
+        "id": 7,
+        "name": "Star-Lord",
+        "instrument": "Element Guns",
+        "image_url": "https://i.etsystatic.com/20505595/r/il/d36aea/2477053762/il_fullxfull.2477053762_zupk.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Thor",
+        "instrument": "Stormbreaker",
+        "image_url": "https://i.etsystatic.com/31636092/r/il/9cb072/4151769325/il_570xN.4151769325_axn6.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Green Arrow",
+        "instrument": "Bow and Arrows",
+        "image_url": "https://m.media-amazon.com/images/I/81bImn6tQrL.jpg"
+    }
+]

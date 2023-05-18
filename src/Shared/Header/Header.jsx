@@ -7,7 +7,7 @@ import './Header.css'
 const Header = () => {
     const [dropdown, setDropdown] = useState(false)
     return (
-        <div>
+        <div className="sticky top-0 z-50">
 
 
             <nav className="bg-[#101826]">
