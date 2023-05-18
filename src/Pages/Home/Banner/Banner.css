@@ -1,0 +1,23 @@
+.Slide-1,
+.Slide-2,
+.Slide-3,
+.Slide-4,
+.Slide-6,
+.Slide-5 {
+    overflow: hidden;
+    border-left: 1px solid #118eee;
+    border-right: 1px solid #118eee;
+}
+
+.banner-img {
+    height: 27rem;
+    width: 100%;
+
+}
+
+.banner-img:hover {
+
+    transform: scale(1.1);
+    transition: transform .35s ease-out;
+
+}
