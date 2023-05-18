@@ -18,7 +18,7 @@ const Banner = () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
-    console.log(screenWidth)
+    // console.log(screenWidth)
     return (
 
 
