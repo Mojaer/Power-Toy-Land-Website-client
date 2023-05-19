@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
+import Swal from "sweetalert2";
 
 
 const UserRegistration = () => {
@@ -17,7 +18,19 @@ const UserRegistration = () => {
         const imgUrl = form.url.value;
 
         userRegistrations(email, password, name, imgUrl)
-            .then(() => profileUpdate(name, imgUrl))
+            .then(() => {
+                profileUpdate(name, imgUrl)
+                Swal.fire({
+                    icon: 'success',
+                    title: 'You are successfully Registered',
+                })
+            })
+            .catch((error) => {
+                Swal.fire({
+                    icon: 'error',
+                    title: `${error.message}`,
+                })
+            })
     }
 
     const handleGoogleSignIn = () => {

@@ -1,24 +1,14 @@
 import { useContext } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
-import { Vortex } from "react-loader-spinner";
+import Swal from "sweetalert2";
+
 
 
 const AddAToy = () => {
 
-    const { user, loading } = useContext(AuthContext);
+    const { user } = useContext(AuthContext);
 
-    if (loading) {
-        return <div className="h-screen w-1/4 mx-auto pt-30">
-            <Vortex
-                visible={true}
-                height="200"
-                width="200"
-                ariaLabel="vortex-loading"
-                wrapperClass="vortex-wrapper"
-                colors={['red', 'green', 'blue', 'yellow', 'orange', 'purple']}
-            />
-        </div>
-    }
+
 
     const handleToyAdd = (event) => {
         event.preventDefault();
@@ -46,6 +36,12 @@ const AddAToy = () => {
             },
             body: JSON.stringify(userToy)
         })
+            .then(() => {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Your toy is added',
+                })
+            })
 
         console.log(toyName, sellerName, sellerEmail,
             description, imageUrl, subCategory, price, rating, quantity)

@@ -13,6 +13,7 @@ const AuthProvider = ({ children }) => {
     const [loading, setLoading] = useState(true)
 
     //registration for the website
+    // eslint-disable-next-line no-unused-vars
     const userRegistrations = (email, password, name, url) => {
         return createUserWithEmailAndPassword(auth, email, password)
     }

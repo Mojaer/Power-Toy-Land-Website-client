@@ -1,24 +1,23 @@
 import { useContext } from "react";
 import { AuthContext } from "../AuthProvider";
 import { Navigate } from "react-router-dom";
-import { Bars } from "react-loader-spinner";
+import { Vortex } from "react-loader-spinner";
 
 
 const PrivateRoute = ({ children }) => {
     const { user, loading } = useContext(AuthContext)
 
     if (loading) {
-        return <>
-            <Bars
-                height="80"
-                width="80"
-                color="#4fa94d"
-                ariaLabel="bars-loading"
-                wrapperStyle={{}}
-                wrapperClass=""
+        return <div className="h-screen w-1/4 mx-auto pt-30">
+            <Vortex
                 visible={true}
+                height="200"
+                width="200"
+                ariaLabel="vortex-loading"
+                wrapperClass="vortex-wrapper"
+                colors={['red', 'green', 'blue', 'yellow', 'orange', 'purple']}
             />
-        </>
+        </div>
     }
 
     else if (user) {
@@ -26,15 +25,9 @@ const PrivateRoute = ({ children }) => {
     }
 
     else {
-        <Navigate to='/login'></Navigate>
+        return <Navigate to='/login'></Navigate>
     }
 
-
-    return (
-        <div>
-
-        </div>
-    );
 };
 
 export default PrivateRoute;
