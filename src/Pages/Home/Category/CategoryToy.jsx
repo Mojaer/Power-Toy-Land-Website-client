@@ -16,7 +16,7 @@ const CategoryToy = ({ toy }) => {
                 <p className="text-xl">Price:  {price}</p>
                 <p>Rating: {rating}</p>
                 <div className="card-actions justify-start">
-                    <button className="btn btn-success">View Details</button>
+                    <button className="btn bg-lime-950 text-lg font-bold">View Details</button>
                 </div>
             </div>
         </div>
