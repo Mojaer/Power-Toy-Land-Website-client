@@ -14,8 +14,6 @@ const Header = () => {
     }
     return (
         <div className="sticky top-0 z-50">
-
-
             <nav className="bg-[#101826]">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <NavLink to='/' className="flex items-center">
@@ -40,7 +38,7 @@ const Header = () => {
                                 <NavLink className="block py-2 pl-3 pr-4 text-white md:p-0">My Toys</NavLink>
                             </li>
                             <li>
-                                <NavLink className="block py-2 pl-3 pr-4 text-white md:p-0">Add A Toy</NavLink>
+                                <NavLink to='/addtoy' className="block py-2 pl-3 pr-4 text-white md:p-0">Add A Toy</NavLink>
                             </li>
                         </ul>
                     </div>
