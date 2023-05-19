@@ -8,7 +8,7 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 const Header = () => {
     const [dropdown, setDropdown] = useState(false)
     const { user, userLogout } = useContext(AuthContext)
-    console.log(user)
+
 
     const handleLogout = () => {
         userLogout();
@@ -43,12 +43,14 @@ const Header = () => {
                             <li>
                                 <NavLink to='/allusertoys' className="block py-2 pl-3 pr-4 text-white md:p-0">All Toys</NavLink>
                             </li>
-                            <li>
-                                <NavLink className="block py-2 pl-3 pr-4 text-white md:p-0">My Toys</NavLink>
-                            </li>
-                            <li>
+                            {
+                                user && <li>
+                                    <NavLink className="block py-2 pl-3 pr-4 text-white md:p-0">My Toys</NavLink>
+                                </li>
+                            }
+                            {user && <li>
                                 <NavLink to='/addtoy' className="block py-2 pl-3 pr-4 text-white md:p-0">Add A Toy</NavLink>
-                            </li>
+                            </li>}
                             <li>
                                 <NavLink to='/blogs' className="block py-2 pl-3 pr-4 text-white md:p-0">Blogs</NavLink>
                             </li>
