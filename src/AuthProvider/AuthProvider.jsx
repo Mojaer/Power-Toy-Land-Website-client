@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from 'react';
 import app from '../Firebase/firebase.config';
-import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 
 export const AuthContext = createContext(null)
 
@@ -13,12 +13,13 @@ const AuthProvider = ({ children }) => {
     const [loading, setLoading] = useState(true)
 
     //registration for the website
-    const userRegistrations = (email, password) => {
+    const userRegistrations = (email, password, name, url) => {
         return createUserWithEmailAndPassword(auth, email, password)
     }
 
     //log in to the website
     const userLogin = (email, password) => {
+        setLoading(true)
         return signInWithEmailAndPassword(auth, email, password)
     }
 
@@ -30,19 +31,30 @@ const AuthProvider = ({ children }) => {
     //signIn with google account
     const provider = new GoogleAuthProvider();
     const googleSignIn = () => {
+        setLoading(true)
         return signInWithPopup(auth, provider)
+    }
+
+    // add name and image url to the account
+    const profileUpdate = (name, url) => {
+        return updateProfile(auth.currentUser, {
+            displayName: name, photoURL: url
+        })
     }
 
     // user Management 
     useEffect(() => {
         const unRegister = onAuthStateChanged(auth, (subscriber) => {
             setUser(subscriber)
+
             setLoading(false)
         })
         return () => {
             unRegister()
         }
-    }, [])
+    }, [auth])
+
+    console.log(user)
 
 
 
@@ -53,6 +65,7 @@ const AuthProvider = ({ children }) => {
         userRegistrations,
         userLogin,
         googleSignIn,
+        profileUpdate,
         userLogout
     }
     return (

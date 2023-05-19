@@ -5,7 +5,7 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 const UserRegistration = () => {
 
-    const { user, userRegistrations } = useContext(AuthContext)
+    const { user, userRegistrations, profileUpdate, googleSignIn } = useContext(AuthContext)
     // console.log(userRegistrations, user)
 
     const handleRegister = (event) => {
@@ -16,11 +16,15 @@ const UserRegistration = () => {
         const password = form.password.value;
         const imgUrl = form.url.value;
 
-        userRegistrations(email, password)
-            .then(user => console.log(user))
-
-        // console.log(name, email, password, imgUrl)
+        userRegistrations(email, password, name, imgUrl)
+            .then(() => profileUpdate(name, imgUrl))
     }
+
+    const handleGoogleSignIn = () => {
+        return googleSignIn()
+    }
+
+
 
     return (
         <div className="mt-10 mx-10 ">
@@ -47,7 +51,7 @@ const UserRegistration = () => {
                     <p className="ms-1">Already have an account, please <Link className="text-success text-lg" to='/login' >Login</Link> </p>
                 </div>
                 <div className="py-5 w-2/3 mx-auto">
-                    <button className="btn bg-sky-700 px-5 font-semibold text-lg">Login with google</button>
+                    <button className="btn bg-sky-700 px-5 font-semibold text-lg" onClick={handleGoogleSignIn}>Login with google</button>
                 </div>
             </form>
         </div>
