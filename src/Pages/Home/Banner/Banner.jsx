@@ -29,7 +29,7 @@ const Banner = () => {
                 mousewheel={true}
                 className="mySwiper">
                 <SwiperSlide className='Slide-6 text-center '>
-                    <img className='w-full mx-auto' src="/public/welcome.png" alt="welcome" />
+                    <img className='w-full mx-auto' src="/welcome.png" alt="welcome" />
                 </SwiperSlide>
                 <SwiperSlide className='Slide-5 text-center'>
                     <img className='banner-img' src="/BannerImage/Deku.jpg" alt="" />
@@ -53,7 +53,7 @@ const Banner = () => {
                     <div className='space-y-1 p-4'>
                         <h2 className='font-bold text-4xl'>Grab Your Hero</h2>
                         <h3 className='my-3'>Power Up Your Playtime with Superhero Toys From the </h3>
-                        <img className='w-3/4 mx-auto' src="/public/power_toy_land-2.png" alt="" />
+                        <img className='w-3/4 mx-auto' src="/power_toy_land-2.png" alt="" />
                         <p className='text-xl'>Choose your power</p>
                     </div>
                 </SwiperSlide>
