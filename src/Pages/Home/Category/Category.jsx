@@ -21,17 +21,12 @@ const Category = () => {
     // category function for the different categories
     const categorizedToy = (category) => {
         return (
-            <article className="grid grid-cols-2 gap-4 justify-items-center">
+            <article className="grid lg:grid-cols-2 grid-cols-1 gap-4 justify-items-center">
                 {
                     category.map(toy => <CategoryToy key={toy._id} toy={toy}></CategoryToy>)
                 }
-
             </article>)
     }
-
-
-
-
     return (
         <section className="py-10">
             <h1 className="text-5xl font-bold text-center my-8">Toy Categories: Explore & Choose</h1>

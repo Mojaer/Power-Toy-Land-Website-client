@@ -7,7 +7,7 @@ const CategoryToy = ({ toy }) => {
     return (
         <div className="card lg:card-side  shadow-xl bg-pink-900 justify-between ">
             <figure
-                className="w-1/2"><img src={pictureUrl} className="w-full "
+                className="md:w-1/2"><img src={pictureUrl} className="w-full "
                     style={{ transform: "scale(1.3)" }}
                     alt="Album" />
             </figure>

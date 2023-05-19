@@ -1,8 +1,8 @@
 import { createContext, useEffect, useState } from 'react';
 import app from '../Firebase/firebase.config';
-import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 
-const AuthContext = createContext(null)
+export const AuthContext = createContext(null)
 
 
 
@@ -13,7 +13,7 @@ const AuthProvider = ({ children }) => {
     const [loading, setLoading] = useState(true)
 
     //registration for the website
-    const userRegistration = (email, password) => {
+    const userRegistrations = (email, password) => {
         return createUserWithEmailAndPassword(auth, email, password)
     }
 
@@ -25,6 +25,12 @@ const AuthProvider = ({ children }) => {
     //signOut from the website
     const userLogout = () => {
         return signOut(auth)
+    }
+
+    //signIn with google account
+    const provider = new GoogleAuthProvider();
+    const googleSignIn = () => {
+        return signInWithPopup(auth, provider)
     }
 
     // user Management 
@@ -44,8 +50,9 @@ const AuthProvider = ({ children }) => {
 
     const userInfo = {
         user, loading,
-        userRegistration,
+        userRegistrations,
         userLogin,
+        googleSignIn,
         userLogout
     }
     return (
