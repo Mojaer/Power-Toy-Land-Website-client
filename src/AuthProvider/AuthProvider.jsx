@@ -54,7 +54,7 @@ const AuthProvider = ({ children }) => {
         }
     }, [auth])
 
-    console.log(user)
+    // console.log(user)
 
 
 

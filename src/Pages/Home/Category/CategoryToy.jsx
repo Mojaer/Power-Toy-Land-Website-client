@@ -1,9 +1,9 @@
 
 
 const CategoryToy = ({ toy }) => {
-    console.log(toy)
+    // console.log(toy)
     const { pictureUrl, name, price, rating } = toy
-    console.log(name, pictureUrl)
+    // console.log(name, pictureUrl)
     return (
         <div className="card lg:card-side  shadow-xl bg-pink-900 justify-between ">
             <figure

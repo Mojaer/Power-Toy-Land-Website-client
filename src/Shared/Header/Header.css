@@ -6,3 +6,7 @@
     transition-timing-function: ease;
     /* Set the easing effect */
 }
+
+.active {
+    color: red;
+}
