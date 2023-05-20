@@ -48,7 +48,7 @@ const Header = () => {
                             </li>
                             {
                                 user && <li>
-                                    <NavLink className="block py-2 pl-3 pr-4 text-white md:p-0">My Toys</NavLink>
+                                    <NavLink to='/mytoys' className="block py-2 pl-3 pr-4 text-white md:p-0">My Toys</NavLink>
                                 </li>
                             }
                             {user && <li>
