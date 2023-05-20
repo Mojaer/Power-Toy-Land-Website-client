@@ -76,7 +76,7 @@ const AddAToy = () => {
                     <div className="my-3 w-2/3">
                         <label className="ms-1 block mb-2 text-md font-medium text-white ">Sub Category</label>
                         <select className="bg-transparent border border-gray-300 text-white text-lg rounded-lg block w-3/4 pl-5 p-2.5" name="subcategory">
-                            <option className="bg-black border border-gray-300 text-white" selected>Marvel</option>
+                            <option className="bg-black border border-gray-300 text-white" defaultValue>Marvel</option>
                             <option className="bg-black border border-gray-300 text-white">DC</option>
                             <option className="bg-black border border-gray-300 text-white">Transformer</option>
                             <option className="bg-black border border-gray-300 text-white">Anime</option>
@@ -84,7 +84,8 @@ const AddAToy = () => {
                     </div>
                     <div className="my-1 w-full mx-auto">
                         <label className="ms-1 block mb-2 text-md font-medium text-white ">Rating</label>
-                        <input type="number" name="rating" className="bg-transparent border border-gray-300 text-white text-lg rounded-lg block w-3/4 pl-5 p-2.5" placeholder="rating" required />
+                        <input type="number" max='5' name="rating" className="bg-transparent border border-gray-300 text-white text-lg rounded-lg block w-3/4 pl-5 p-2.5" placeholder="rating" required />
+                        <small>rating should be 1 to 5</small>
                     </div>
                     <div className="my-1 w-full mx-auto">
                         <label className="ms-1 block mb-2 text-md font-medium text-white ">Available Quantity</label>
