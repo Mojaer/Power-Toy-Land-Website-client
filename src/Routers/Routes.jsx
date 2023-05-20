@@ -26,12 +26,12 @@ const router = createBrowserRouter([
             {
                 path: "/allusertoys",
                 element: <AllUserToys></AllUserToys>,
-                loader: () => fetch('http://localhost:5000/allusertoys')
+                loader: () => fetch('https://power-toy-land-server.vercel.app/allusertoys')
             },
             {
                 path: "/viewdetails/:id",
                 element: <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/viewdetails/${params.id}`)
+                loader: ({ params }) => fetch(`https://power-toy-land-server.vercel.app/viewdetails/${params.id}`)
 
             },
             {
@@ -41,7 +41,7 @@ const router = createBrowserRouter([
             {
                 path: '/updatetoy/:id',
                 element: <PrivateRoute><UpdateToy></UpdateToy></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/viewdetails/${params.id}`)
+                loader: ({ params }) => fetch(`https://power-toy-land-server.vercel.app/viewdetails/${params.id}`)
             },
             {
                 path: "/login",

@@ -21,7 +21,7 @@ const UpdateToy = () => {
 
         }
 
-        fetch(`http://localhost:5000/toyupdate/${_id}`, {
+        fetch(`https://power-toy-land-server.vercel.app/toyupdate/${_id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'

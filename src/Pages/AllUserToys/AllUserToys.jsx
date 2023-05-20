@@ -8,6 +8,8 @@ const AllUserToys = () => {
 
 
     const limitedToy = useMemo(() => allToys.slice(0, 20), [allToys]);
+
+    console.log(limitedToy)
     return (
 
         <div className="relative overflow-x-auto shadow-md sm:rounded p-10">

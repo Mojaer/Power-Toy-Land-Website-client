@@ -11,7 +11,7 @@ const MyToys = () => {
     // console.log(user)
     useEffect(() => {
         const getToy = async () => {
-            const res = await fetch(`http://localhost:5000/mytoys?email=${user?.email}`);
+            const res = await fetch(`https://power-toy-land-server.vercel.app/mytoys?email=${user?.email}`);
             const data = await res.json();
             seMytToys(data);
 
@@ -34,7 +34,7 @@ const MyToys = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/mytoys/${id}`, {
+                fetch(`https://power-toy-land-server.vercel.app/mytoys/${id}`, {
                     method: 'DELETE'
                 })
                     .then(res => {

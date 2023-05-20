@@ -29,7 +29,7 @@ const AddAToy = () => {
             price, rating, quantity
         }
 
-        fetch('http://localhost:5000/addtoy', {
+        fetch('https://power-toy-land-server.vercel.app/addtoy', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

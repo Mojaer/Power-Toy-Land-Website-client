@@ -7,7 +7,7 @@ const Category = () => {
     const [toys, setToys] = useState([])
     useEffect(() => {
         const fetchToys = async () => {
-            const res = await fetch('http://localhost:5000/toy')
+            const res = await fetch('https://power-toy-land-server.vercel.app/toy')
             const data = await res.json();
             setToys(data);
         }
