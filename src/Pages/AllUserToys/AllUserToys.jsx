@@ -1,11 +1,13 @@
 import { useLoaderData } from "react-router-dom";
 import AlluserTable from "./AlluserTable";
+import { useMemo } from "react";
 
 
 const AllUserToys = () => {
     const allToys = useLoaderData()
 
-    console.log(allToys)
+
+    const limitedToy = useMemo(() => allToys.slice(0, 20), [allToys]);
     return (
 
         <div className="relative overflow-x-auto shadow-md sm:rounded p-10">
@@ -30,7 +32,7 @@ const AllUserToys = () => {
                     </tr>
                 </thead>
                 {
-                    allToys.map(toy => <AlluserTable toy={toy} key={toy._id}></AlluserTable>)
+                    limitedToy.map(toy => <AlluserTable toy={toy} key={toy._id}></AlluserTable>)
                 }
             </table>
         </div>

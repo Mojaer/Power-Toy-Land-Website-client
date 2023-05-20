@@ -2,9 +2,8 @@ import { useLoaderData } from "react-router-dom";
 
 
 const ViewDetails = () => {
-
     const toy = useLoaderData()
-    console.log(toy)
+    // console.log(toy)
 
     const { imageUrl, toyName, price, sellerName, sellerEmail,
         rating, quantity, description, subCategory } = toy
@@ -28,11 +27,10 @@ const ViewDetails = () => {
                         <p className="text-3xl font-medium"><span className="font-semibold text-gray-300">Seller-Name : </span>  {sellerName}</p>
                         <p className="text-3xl font-medium"><span className="font-semibold text-gray-300">Seller-Email : </span> {sellerEmail}</p>
                         <p className="text-3xl font-medium"><span className="font-semibold text-gray-300">Description : </span> {description}</p>
-
-
                     </div>
                 </div>
             </div>
+
         </section>
 
     );

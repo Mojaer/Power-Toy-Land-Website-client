@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 
 const UserRegistration = () => {
 
-    const { user, userRegistrations, profileUpdate, googleSignIn } = useContext(AuthContext)
+    const { userRegistrations, profileUpdate, googleSignIn } = useContext(AuthContext)
     // console.log(userRegistrations, user)
 
     const handleRegister = (event) => {

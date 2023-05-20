@@ -23,7 +23,7 @@ const AlluserTable = ({ toy }) => {
                     {quantity}
                 </td>
                 <th scope="col" className="px-6 py-3">
-                    <Link to={`/viewdetails/${_id}`} className="btn bg-gray-800 text-lg font-semibold">View Details</Link>
+                    <Link to={`/viewdetails/${_id}`} className="btn bg-gray-800 text-base font-semibold">View Details</Link>
                 </th>
             </tr>
         </tbody>

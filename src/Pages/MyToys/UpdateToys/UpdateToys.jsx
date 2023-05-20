@@ -1,18 +1,13 @@
-import { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
-import { AuthContext } from "../../../AuthProvider/AuthProvider";
 
 
 const UpdateToy = () => {
-
-    const { user } = useContext(AuthContext)
     const toy = useLoaderData()
+
 
     const { price, quantity,
         description, _id } = toy
-
-    // console.log(toy)
 
     const handleToyUpdate = (event) => {
         event.preventDefault();
@@ -34,11 +29,12 @@ const UpdateToy = () => {
             body: JSON.stringify(updateToy)
         })
             .then((res) => {
-                console.log(res)
                 if (res.ok) {
+
                     Swal.fire({
                         icon: 'success',
                         title: 'Your toy is successfully updated',
+                        confirmButtonText: 'ok',
                     })
                 }
 

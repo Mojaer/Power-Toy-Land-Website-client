@@ -57,31 +57,31 @@ const MyToys = () => {
             <table className="w-full AllUserTable text-center text-gray-500">
                 <thead className="text-xl text-gray-200 uppercase bg-transparent  ">
                     <tr >
-                        <th scope="col" className="px-6 py-3">
+                        <th scope="col" className="px-4 py-3">
                             Image
                         </th>
-                        <th scope="col" className="px-6 py-3">
+                        <th scope="col" className="px-4 py-3">
                             Seller  Name
                         </th>
-                        <th scope="col" className="px-6 py-3">
+                        <th scope="col" className="px-4 py-3">
                             Seller  Email
                         </th>
-                        <th scope="col" className="px-6 py-3">
+                        <th scope="col" className="px-4 py-3">
                             Toy  Name
                         </th>
-                        <th scope="col" className="px-6 py-3">
+                        <th scope="col" className="px-4 py-3">
                             Sub-Category
                         </th>
-                        <th scope="col" className="px-6 py-3">
+                        <th scope="col" className="px-4 py-3">
                             Price
                         </th>
-                        <th scope="col" className="px-6 py-3">
+                        <th scope="col" className="px-4 py-3">
                             Rating
                         </th>
-                        <th scope="col" className="px-6 py-3">
+                        <th scope="col" className="px-4 py-3">
                             Available  quantity
                         </th>
-                        <th scope="col" className="px-6 py-3">
+                        <th scope="col" className="px-4 py-3">
                             Description
                         </th>
                     </tr>
