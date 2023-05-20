@@ -24,7 +24,7 @@ const Header = () => {
                     <div className="flex md:order-2">
                         {user ?
                             <div className="dropdown dropdown-bottom dropdown-end ">
-                                <label tabIndex={0} className="btn w-24 overflow-hidden "><img src={user.photoURL} className="w-full" title={user.displayName} alt="image" /></label>
+                                <label tabIndex={0} className="btn border-none w-24 overflow-hidden bg-transparent  "><img src={user.photoURL} className="w-full rounded-full" title={user.displayName} alt="image" /></label>
                                 <ul tabIndex={0} className="dropdown-content menu p-2 shadow  rounded-box w-52">
                                     <li><button className="btn" onClick={handleLogout}>Logout</button> </li>
                                 </ul>

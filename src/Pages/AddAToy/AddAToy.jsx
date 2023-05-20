@@ -43,8 +43,8 @@ const AddAToy = () => {
                 })
             })
 
-        console.log(toyName, sellerName, sellerEmail,
-            description, imageUrl, subCategory, price, rating, quantity)
+        // console.log(toyName, sellerName, sellerEmail,
+        //     description, imageUrl, subCategory, price, rating, quantity)
     }
 
 

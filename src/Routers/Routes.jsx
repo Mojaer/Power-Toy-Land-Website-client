@@ -6,6 +6,7 @@ import UserRegistration from "../UserAccount/UserRegistration/UserRegistration";
 import AddAToy from "../Pages/AddAToy/AddAToy";
 import AllUserToys from "../Pages/Allusertoys/AllUserToys";
 import PrivateRoute from "../AuthProvider/PrivateRoute/PrivateRoute";
+import ViewDetails from "../Pages/viewDetails/ViewDetails";
 
 const router = createBrowserRouter([
     {
@@ -17,14 +18,6 @@ const router = createBrowserRouter([
                 element: <Home></Home>,
             },
             {
-                path: "/login",
-                element: <UserLogin></UserLogin>,
-            },
-            {
-                path: "/register",
-                element: <UserRegistration></UserRegistration>,
-            },
-            {
                 path: "/addtoy",
                 element: <PrivateRoute><AddAToy></AddAToy></PrivateRoute>,
             },
@@ -32,6 +25,20 @@ const router = createBrowserRouter([
                 path: "/allusertoys",
                 element: <AllUserToys></AllUserToys>,
                 loader: () => fetch('http://localhost:5000/allusertoys')
+            },
+            {
+                path: "/viewdetails/:id",
+                element: <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
+                loader: ({ params }) => fetch(`http://localhost:5000/viewdetails/${params.id}`)
+
+            },
+            {
+                path: "/login",
+                element: <UserLogin></UserLogin>,
+            },
+            {
+                path: "/register",
+                element: <UserRegistration></UserRegistration>,
             },
         ]
     },

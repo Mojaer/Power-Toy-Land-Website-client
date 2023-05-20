@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 
 
 const AlluserTable = ({ toy }) => {
 
-    const { price, quantity, subCategory, toyName, sellerName } = toy
+    const { price, quantity, subCategory, toyName, sellerName, _id } = toy
     return (
         <tbody>
             <tr className="bg-gray-700 text-gray-300  font-medium text-xl border-b ">
@@ -22,7 +23,7 @@ const AlluserTable = ({ toy }) => {
                     {quantity}
                 </td>
                 <th scope="col" className="px-6 py-3">
-                    <button className="btn bg-gray-800 text-lg font-semibold">View Details</button>
+                    <Link to={`/viewdetails/${_id}`} className="btn bg-gray-800 text-lg font-semibold">View Details</Link>
                 </th>
             </tr>
         </tbody>

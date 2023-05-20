@@ -28,23 +28,23 @@ const Category = () => {
             </article>)
     }
     return (
-        <section className="py-10">
-            <h1 className="text-5xl font-bold text-center my-8">Toy Categories: Explore & Choose</h1>
+        <section className="pt-5 pb-4">
+            <h1 className="text-5xl font-bold text-center mb-10 mt-5">Toy Categories: Explore & Choose</h1>
             <div>
                 <Tabs>
                     <TabList className='flex justify-evenly flex-wrap mb-3 bg-slate-700'>
                         <Tab className="mr-2 py-2" >
-                            <h1 className="px-3 border-b-2  border-transparent rounded-b-lg hover:text-red-400 hover:border-red-700 ">
+                            <h1 className="px-3 text-xl border-b-2  border-transparent rounded-b-lg hover:text-red-400 hover:border-red-700 ">
                                 DC
                             </h1>
                         </Tab>
                         <Tab className="mr-2 py-2">
-                            <h1 className="px-3 border-b-2  border-transparent rounded-b-lg hover:text-red-300 hover:border-red-700 ">
+                            <h1 className="px-3 text-xl border-b-2  border-transparent rounded-b-lg hover:text-red-300 hover:border-red-700 ">
                                 Marvel
                             </h1>
                         </Tab>
                         <Tab className="mr-2 py-2">
-                            <h1 className="px-3  border-b-2  border-transparent rounded-b-lg hover:text-red-300 hover:border-red-700 ">
+                            <h1 className="px-3 text-xl border-b-2  border-transparent rounded-b-lg hover:text-red-300 hover:border-red-700 ">
                                 Transformer
                             </h1>
                         </Tab>

@@ -39,7 +39,7 @@ const AuthProvider = ({ children }) => {
     // add name and image url to the account
     const profileUpdate = (name, url) => {
         return updateProfile(auth.currentUser, {
-            displayName: name, photoURL: url
+            displayName: name || 'no name', photoURL: url || 'https://static.vecteezy.com/system/resources/thumbnails/009/734/564/small/default-avatar-profile-icon-of-social-media-user-vector.jpg'
         })
     }
 
