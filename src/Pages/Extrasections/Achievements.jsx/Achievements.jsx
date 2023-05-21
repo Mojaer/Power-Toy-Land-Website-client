@@ -14,7 +14,7 @@ const Achievements = () => {
                     </div>
 
                 </article>
-                <article className='flex items-center'>
+                <article className='flex items-center py-8'>
                     <p ><MdStarPurple500 className='border-2 rounded-full text-orange-400 p-2 border-red-400 text-9xl'></MdStarPurple500></p>
                     <div className='ms-3'>
                         <h4 className='from-neutral-400 text-2xl'>Reviews</h4>
@@ -23,7 +23,7 @@ const Achievements = () => {
                     </div>
 
                 </article>
-                <article className='flex items-center'>
+                <article className='flex items-center py-8'>
                     <p ><MdShoppingCartCheckout className='border-2 rounded-full text-orange-400 p-2 border-red-400 text-9xl'></MdShoppingCartCheckout></p>
                     <div className='ms-3'>
                         <h4 className='from-neutral-400 text-2xl'>Sales</h4>
@@ -33,9 +33,9 @@ const Achievements = () => {
 
                 </article>
             </div>
-            <div className='py-12 relative'>
+            <div className='py-8 relative'>
                 <p className='w-2/5 flex justify-center mx-auto'> <img className='w-2/6' src="/number-one.png" alt="" /></p>
-                <h1 className=' lg:text-5xl text-lg bg-gradient-to-r from-orange-800 via-orange-700 to-orange-600 rounded-xl border-4 border-gray-400 text-gray-300 text-center  w-2/5 mx-auto py-7 lg:py-14 -mt-8 lg:-mt-16'>Best seller of january 2023</h1>
+                <h1 className=' lg:text-5xl text-lg bg-gradient-to-t from-orange-800 via-orange-700 to-orange-600 rounded-xl border-4 border-gray-400 text-gray-300 text-center  w-2/5 mx-auto py-7 lg:py-14 -mt-8 lg:-mt-16'>Best seller of january 2023</h1>
 
             </div>
 
