@@ -2,10 +2,13 @@ import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import Swal from "sweetalert2";
+import dynamicTitle from "../../assets/dynamictitle";
 
 
 
 const UserLogin = () => {
+
+    dynamicTitle('Login')
 
     const { googleSignIn, userLogin } = useContext(AuthContext)
     const navigate = useNavigate();
@@ -48,7 +51,7 @@ const UserLogin = () => {
 
 
     return (
-        <div className="mt-10 mx-10 h-screen">
+        <div className="mt-10 mx-10 ">
             <form className=" w-full" onSubmit={handleLogin}>
                 <h1 className="text-5xl font-semibold mx-auto w-2/3">Please login </h1>
                 <div className="my-7 w-2/3 mx-auto">

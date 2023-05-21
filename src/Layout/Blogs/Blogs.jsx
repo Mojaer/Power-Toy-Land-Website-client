@@ -1,7 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import dynamicTitle from "../../assets/dynamictitle";
+
 
 const Blogs = () => {
+
+    dynamicTitle('Blogs')
     return (
         <div className="grid grid-cols-1 lg:grid-cols-2 py-16 px-4 gap-8">
             <div className="text-lg text-cyan-300 space-y-3">

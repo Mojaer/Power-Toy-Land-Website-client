@@ -2,9 +2,12 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import Swal from "sweetalert2";
+import dynamicTitle from "../../assets/dynamictitle";
 
 
 const UserRegistration = () => {
+
+    dynamicTitle('Registration');
 
     const { userRegistrations, profileUpdate, googleSignIn } = useContext(AuthContext)
     // console.log(userRegistrations, user)

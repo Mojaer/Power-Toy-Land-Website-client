@@ -28,8 +28,8 @@ const Banner = () => {
                 direction={"horizontal"} modules={[Mousewheel]}
                 mousewheel={true}
                 className="mySwiper">
-                <SwiperSlide className='Slide-6 text-center '>
-                    <img className='w-full mx-auto' src="/welcome.png" alt="welcome" />
+                <SwiperSlide className='Slide-6 text-center bg-[url("/welcome.png")] bg-contain bg-no-repeat bg-center bg-fixed'>
+                    <h1 className='w-full py-40 mx-auto '></h1>
                 </SwiperSlide>
                 <SwiperSlide className='Slide-5 text-center'>
                     <img className='banner-img' src="/BannerImage/Deku.jpg" alt="" />

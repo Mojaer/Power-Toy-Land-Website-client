@@ -1,13 +1,14 @@
 import { useContext } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import Swal from "sweetalert2";
+import dynamicTitle from "../../assets/dynamictitle";
 
 
 
 const AddAToy = () => {
 
     const { user } = useContext(AuthContext);
-
+    dynamicTitle('Add Toy')
 
 
     const handleToyAdd = (event) => {
