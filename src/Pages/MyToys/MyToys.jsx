@@ -53,7 +53,7 @@ const MyToys = () => {
     }
 
     return (
-        <div className="relative overflow-x-auto shadow-md sm:rounded p-10">
+        <div className="relative overflow-x-auto shadow-md sm:rounded p-10 min-h-screen">
             <table className="w-full AllUserTable text-center text-gray-500">
                 <thead className="text-xl text-gray-200 uppercase bg-transparent  ">
                     <tr >

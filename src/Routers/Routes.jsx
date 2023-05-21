@@ -9,6 +9,7 @@ import PrivateRoute from "../AuthProvider/PrivateRoute/PrivateRoute";
 import ViewDetails from "../Pages/viewDetails/ViewDetails";
 import MyToys from "../Pages/MyToys/MyToys";
 import UpdateToy from "../Pages/MyToys/UpdateToys/UpdateToys";
+import Blogs from "../Layout/Blogs/Blogs";
 
 const router = createBrowserRouter([
     {
@@ -51,8 +52,13 @@ const router = createBrowserRouter([
                 path: "/register",
                 element: <UserRegistration></UserRegistration>,
             },
+            {
+                path: "/blogs",
+                element: <Blogs></Blogs>
+            },
         ]
     },
+
 
     {
         path: "*",
