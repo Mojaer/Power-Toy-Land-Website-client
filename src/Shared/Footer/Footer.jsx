@@ -5,7 +5,7 @@ const Footer = () => {
         <footer className=" bg-slate-900 ">
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
-                    <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                    <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 w-full">
                         <div>
                             <h2 className="mb-6 text-sm font-semibold text-gray-300 uppercase ">Address</h2>
                             <ul className="text-gray-400  font-medium">
@@ -17,14 +17,14 @@ const Footer = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div>
+                        <div className="w-full">
                             <h2 className="mb-6 text-sm font-semibold text-gray-300 uppercase">Contact</h2>
                             <ul className="text-gray-400  font-medium">
                                 <li className="mb-4">
                                     <p>+880123455656</p>
                                 </li>
                                 <li>
-                                    <p>powertoyland@veryhotmail.com</p>
+                                    <p>no@nomail.com</p>
                                 </li>
                             </ul>
                         </div>
