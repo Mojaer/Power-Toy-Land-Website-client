@@ -6,8 +6,8 @@ import 'aos/dist/aos.css';
 const Discount = () => {
     AOS.init({
         duration: 700,
-        mirror: true,
-        offset: 60,
+        mirror: false,
+
     });
     return (
         <section className="md:flex text-gray-300 justify-around py-16 content-center items-center bg-slate-800 my-8 ">

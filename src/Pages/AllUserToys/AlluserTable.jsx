@@ -5,7 +5,7 @@ const AlluserTable = ({ toy }) => {
 
     const { price, quantity, subCategory, toyName, sellerName, _id } = toy
     return (
-        <tbody>
+        <tbody >
             <tr className="bg-gray-700 text-gray-300  font-medium text-xl border-b ">
                 <th scope="row" className="px-6 py-4 font-medium text-gray-200 whitespace-nowrap ">
                     {sellerName}

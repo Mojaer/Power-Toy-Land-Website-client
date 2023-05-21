@@ -5,8 +5,8 @@ import 'aos/dist/aos.css';
 const Achievements = () => {
     AOS.init({
         duration: 700,
-        mirror: true,
-        offset: 60,
+        mirror: false,
+
     });
     return (
         <section className="pt-5 pb-8">
