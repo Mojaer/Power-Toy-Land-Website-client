@@ -41,7 +41,7 @@ const Achievements = () => {
                 </article>
             </div>
             <div className='py-8 relative'>
-                <p data-aos="fade-down" className='w-2/5 flex justify-center mx-auto'> <img className='w-2/6' src="/number-one.png" alt="" /></p>
+                <p className='w-2/5 flex justify-center mx-auto'> <img className='w-2/6' src="/number-one.png" alt="" /></p>
                 <h1 data-aos="fade-up" className=' lg:text-5xl text-lg bg-gradient-to-t from-orange-800 via-orange-700 to-orange-600 rounded-xl border-4 border-gray-400 text-gray-300 text-center  w-2/5 mx-auto py-7 lg:py-14 -mt-8 lg:-mt-16'>Best seller of january 2023</h1>
 
             </div>

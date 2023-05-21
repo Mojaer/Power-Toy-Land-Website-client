@@ -31,7 +31,7 @@ const Footer = () => {
                     </div>
                     <div className="mb-4 md:mb-0">
                         <p className="flex items-center">
-                            <img src='/public/power_toy_land.png' className="h-8 mr-3 w-full" alt=" Logo" />
+                            <img src='/power_toy_land.png' className="h-8 mr-3 w-full" alt=" Logo" />
                         </p>
                     </div>
 
