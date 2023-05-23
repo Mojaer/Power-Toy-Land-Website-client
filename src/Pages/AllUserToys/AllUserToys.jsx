@@ -39,11 +39,40 @@ const AllUserToys = () => {
 
     }
 
+
+    const handleConvertToPDF = async () => {
+        try {
+            const url = window.location.href; // URL of the webpage to convert
+            const response = await fetch(`http://localhost:5000/convert-to-pdf?url=${encodeURIComponent(url)}`);
+            const pdfBlob = await response.blob();
+
+            // // Optionally, you can save the PDF file locally or display it in an iframe
+            const pdfUrl = URL.createObjectURL(pdfBlob);
+            const link = document.createElement('a');
+            link.href = pdfUrl;
+            link.download = 'converted.pdf';
+            link.style.display = 'none';
+
+            // Append the anchor element to the DOM
+            document.body.appendChild(link);
+
+            // Simulate a click on the anchor element to start the download
+            link.click();
+
+            // Clean up the temporary URL and remove the anchor element
+            URL.revokeObjectURL(url);
+            document.body.removeChild(link);
+        } catch (error) {
+            console.error('PDF conversion request failed:', error);
+        }
+
+    };
+
     // console.log(limitedToy)
     return (
 
         <div className="relative overflow-x-auto shadow-md sm:rounded p-10">
-
+            <button onClick={handleConvertToPDF}> Make it PDF</button>
             <div className="flex items-center justify-end">
                 <form onSubmit={searchItem}>
                     <div className="my-7 flex md:justify-end mr-4">

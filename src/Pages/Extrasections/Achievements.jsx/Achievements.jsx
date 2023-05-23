@@ -15,8 +15,8 @@ const Achievements = () => {
                 <article className='flex items-center py-8'>
                     <p ><MdOutlinePeopleAlt className='border-2 rounded-full text-orange-400 p-2 border-red-400 text-9xl'></MdOutlinePeopleAlt></p>
                     <div className='ms-3'>
-                        <h4 className='from-neutral-400 text-2xl'>Customers</h4>
-                        <h1 className='from-neutral-300 text-5xl font-semibold'>10,000+</h1>
+                        <h4 className='from-neutral-400 md:text-lg lg:text-2xl'>Customers</h4>
+                        <h1 className='from-neutral-300 md:text-xl lg:text-5xl font-semibold'>10,000+</h1>
 
                     </div>
 
@@ -24,7 +24,7 @@ const Achievements = () => {
                 <article className='flex items-center py-8'>
                     <p ><MdStarPurple500 className='border-2 rounded-full text-orange-400 p-2 border-red-400 text-9xl'></MdStarPurple500></p>
                     <div className='ms-3'>
-                        <h4 className='from-neutral-400 text-2xl'>Reviews</h4>
+                        <h4 className='from-neutral-400 md:text-lg text-2xl'>Reviews</h4>
                         <h1 className='from-neutral-300 text-5xl font-semibold'>9,000+</h1>
 
                     </div>
