@@ -72,7 +72,7 @@ const AllUserToys = () => {
     return (
 
         <div className="relative overflow-x-auto shadow-md sm:rounded p-10">
-            <button onClick={handleConvertToPDF}> Make it PDF</button>
+            <button className="btn bg-blue-800 " onClick={handleConvertToPDF}> Make it PDF</button>
             <div className="flex items-center justify-end">
                 <form onSubmit={searchItem}>
                     <div className="my-7 flex md:justify-end mr-4">
