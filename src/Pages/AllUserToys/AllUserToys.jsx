@@ -43,7 +43,7 @@ const AllUserToys = () => {
     const handleConvertToPDF = async () => {
         try {
             const url = window.location.href; // URL of the webpage to convert
-            const response = await fetch(`http://localhost:5000/convert-to-pdf?url=${encodeURIComponent(url)}`);
+            const response = await fetch(`https://power-toy-land-server.vercel.app/convert-to-pdf?url=${encodeURIComponent(url)}`);
             const pdfBlob = await response.blob();
 
             // // Optionally, you can save the PDF file locally or display it in an iframe
