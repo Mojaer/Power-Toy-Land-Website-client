@@ -3,6 +3,7 @@ import Achievements from "../../Extrasections/Achievements.jsx/Achievements";
 import Discount from "../../Extrasections/Discount/Discount";
 import Banner from "../Banner/Banner";
 import Category from "../Category/Category";
+import Review from "../Reiew/Review";
 import Gallery from "../Toy_Gallary/Gallery";
 
 
@@ -14,6 +15,7 @@ const Home = () => {
             <Banner></Banner>
             <Gallery></Gallery>
             <Category></Category>
+            <Review></Review>
             <Discount></Discount>
             <Achievements></Achievements>
         </div>
